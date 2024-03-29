@@ -3,7 +3,10 @@
     "name": "Quick Google Access",
     "version": "1.0",
     "description": "Automatically opens the first Google search result with a shortcut.",
-    "permissions": ["activeTab"],
+    "permissions": [
+        "activeTab",
+        "scripting"
+      ],
     "background": {
       "service_worker": "background.js"
     },
