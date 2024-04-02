@@ -16,7 +16,7 @@
           "default": "Alt+O",
           "mac": "Command+O"
         },
-        "description": "Open the first search result"
+        "description": "Open the first search result without moving"
       }
     },
     "action": {
