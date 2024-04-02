@@ -1,5 +1,4 @@
-function attemptOpenFirstSearchResult() {
-    // Delay execution to ensure results are loaded
+function openFirstLink() {
     setTimeout(() => {
       const resultsSelector = '#search .g'; // This is an example; adjust based on actual structure
       const linkSelector = 'a'; // Likely needs adjustment to be more specific
@@ -20,5 +19,5 @@ function attemptOpenFirstSearchResult() {
     }, 1000); // Delay of 1000 milliseconds (1 second)
   }
   
-  attemptOpenFirstSearchResult();
+  openFirstLink();
   

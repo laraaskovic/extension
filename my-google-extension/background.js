@@ -1,4 +1,6 @@
-chrome.commands.onCommand.addListener(function(command) {
+/*chrome.commands.onCommand.addListener(function(command) {
+    console.log(`Command received: ${command}`); // This helps in debugging
+
     if (command == "open-first-link") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.scripting.executeScript({
@@ -17,4 +19,4 @@ chrome.commands.onCommand.addListener(function(command) {
       console.error("No link found!");
     }
   }
-  
+  */
