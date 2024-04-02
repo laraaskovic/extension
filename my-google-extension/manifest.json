@@ -5,8 +5,10 @@
     "description": "Automatically opens the first Google search result with a shortcut.",
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "webNavigation"
       ],
+      
     "background": {
       "service_worker": "background.js"
     },
@@ -16,9 +18,16 @@
           "default": "Alt+O",
           "mac": "Command+O"
         },
-        "description": "Open the first search result without moving"
+        "description": "Open the first search result"
       }
     },
+    "content_scripts": [
+        {
+          "matches": ["*://*.google.com/*"],
+          "js": ["content.js"]
+        }
+      ],
+      
     "action": {
       "default_popup": "popup.html",
       "default_icon": {

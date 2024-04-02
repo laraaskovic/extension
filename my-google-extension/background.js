@@ -14,7 +14,7 @@ chrome.commands.onCommand.addListener(function(command) {
     if (firstLink) {
       window.location.href = firstLink.href;
     } else {
-      console.error("No link found");
+      console.error("No link found!");
     }
   }
   
