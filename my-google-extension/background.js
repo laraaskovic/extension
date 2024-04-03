@@ -1,4 +1,4 @@
-/*chrome.commands.onCommand.addListener(function(command) {
+chrome.commands.onCommand.addListener(function(command) {
     console.log(`Command received: ${command}`); // This helps in debugging
 
     if (command == "open-first-link") {
@@ -19,4 +19,4 @@
       console.error("No link found!");
     }
   }
-  */
+  

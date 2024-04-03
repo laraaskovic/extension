@@ -16,7 +16,7 @@ function openFirstLink() {
       } else {
         console.log("First result link not found. Check if the selector is correct.");
       }
-    }, 1000); // Delay of 1000 milliseconds (1 second)
+    }, 100); // Delay of 1000 milliseconds (1 second)
   }
   
   openFirstLink();
