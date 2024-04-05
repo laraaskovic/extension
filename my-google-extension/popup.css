@@ -12,7 +12,7 @@ body, html {
 }
 
 h1 {
-    color: #d49800;
+    color: #050b1d;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -24,7 +24,7 @@ p {
 }
 
 button {
-    background-color: #b8d400;
+    background-color: #d08f15;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #8ff757;
+    background-color: #ebb344;
 }
 
 .footer {

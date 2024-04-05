@@ -1,0 +1,229 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #283593;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 100px 0;
+}
+
+.features h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #283593;
+}
+
+.feature p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Pricing Section Styles */
+.pricing {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.plan {
+    text-align: center;
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-20px);
+}
+
+.plan h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #283593;
+}
+
+.plan p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.plan .btn {
+    display: inline-block;
+    background-color: #283593;
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.plan .btn:hover {
+    background-color: #1a237e;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+.contact button {
+    display: block;
+    background-color: #283593;
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #1a237e;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #283593;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
