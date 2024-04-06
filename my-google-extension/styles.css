@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
@@ -56,9 +56,8 @@ header {
 .hero {
     background-color: #007bff;
     color: #fff;
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
-    position: relative;
 }
 
 .hero h1 {
@@ -67,14 +66,14 @@ header {
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 40px;
 }
 
 .hero .btn {
     display: inline-block;
-    background-color: #fff;
-    color: #007bff;
+    background-color: #ffc107;
+    color: #283593;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 30px;
@@ -83,89 +82,107 @@ header {
 }
 
 .hero .btn:hover {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: #ffca28;
+    color: #283593;
 }
 
 /* Features Section Styles */
 .features {
-    padding: 100px 0;
+    padding: 80px 0;
+    text-align: center;
 }
 
 .features h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    color: #283593;
+}
+
+.features .feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .feature {
-    text-align: center;
-    margin-bottom: 60px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
     background-color: #fff;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .feature:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
 .feature h3 {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
     color: #283593;
 }
 
 .feature p {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Pricing Section Styles */
 .pricing {
-    background-color: #f8f8f8;
-    padding: 100px 0;
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
 }
 
 .pricing h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    color: #283593;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .plan {
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
     background-color: #fff;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .plan:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 .plan h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
     color: #283593;
 }
 
 .plan p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .plan .btn {
     display: inline-block;
     background-color: #283593;
     color: #fff;
-    padding: 20px 40px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
@@ -178,13 +195,14 @@ header {
 
 /* Contact Section Styles */
 .contact {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .contact h2 {
     font-size: 36px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    color: #283593;
 }
 
 .contact form {
@@ -195,23 +213,23 @@ header {
 .contact input,
 .contact textarea {
     width: 100%;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .contact button {
     display: block;
     background-color: #283593;
     color: #fff;
-    padding: 20px 40px;
+    padding: 15px 30px;
     text-decoration: none;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 auto;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -224,6 +242,6 @@ header {
 footer {
     background-color: #283593;
     color: #fff;
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
 }
