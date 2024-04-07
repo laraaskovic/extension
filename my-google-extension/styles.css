@@ -86,6 +86,18 @@ header {
     color: #283593;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Features Section Styles */
 .features {
     padding: 80px 0;
@@ -94,29 +106,29 @@ header {
 
 .features h2 {
     font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #283593;
 }
 
-.features .feature {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding: 0 20px;
-}
-
 .feature {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-.feature:hover {
-    transform: translateY(-10px);
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-right: 20px;
+    color: #007bff;
+}
+
+.feature-content {
+    text-align: left;
 }
 
 .feature h3 {
@@ -126,8 +138,9 @@ header {
 }
 
 .feature p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
+    color: #333;
 }
 
 /* Pricing Section Styles */
@@ -139,8 +152,7 @@ header {
 
 .pricing h2 {
     font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #283593;
 }
 
@@ -151,47 +163,77 @@ header {
 }
 
 .plan {
-    width: calc(33.33% - 40px);
-    margin: 0 20px;
-    text-align: center;
-    margin-bottom: 40px;
+    flex: 1;
+    max-width: 300px;
     padding: 40px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin: 0 20px;
 }
 
 .plan:hover {
     transform: translateY(-10px);
 }
 
+.plan:nth-child(2) {
+    background-color: #f9a825;
+}
+
+.plan:nth-child(3) {
+    background-color: #283593;
+}
+
 .plan h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #283593;
 }
 
 .plan p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    color: #333;
 }
 
 .plan .btn {
-    display: inline-block;
+    display: block;
+    width: 100%;
     background-color: #283593;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 0;
     text-decoration: none;
+    border: none;
     border-radius: 30px;
-    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .plan .btn:hover {
     background-color: #1a237e;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact Section Styles */
 .contact {
