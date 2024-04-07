@@ -98,6 +98,18 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Features Section Styles */
 .features {
     padding: 80px 0;
@@ -106,41 +118,38 @@ header {
 
 .features h2 {
     font-size: 36px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 40px;
     color: #283593;
 }
 
 .feature {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    text-align: center;
     margin-bottom: 40px;
+    vertical-align: top;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.feature:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.feature-icon {
-    font-size: 48px;
-    margin-right: 20px;
-    color: #007bff;
-}
-
-.feature-content {
-    text-align: left;
+.feature:hover {
+    transform: translateY(-10px);
 }
 
 .feature h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #283593;
 }
 
 .feature p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
-    color: #333;
 }
 
 /* Pricing Section Styles */
@@ -152,75 +161,65 @@ header {
 
 .pricing h2 {
     font-size: 36px;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 40px;
     color: #283593;
 }
 
 .plans {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .plan {
-    flex: 1;
-    max-width: 300px;
+    width: calc(50% - 40px);
+    margin: 0 20px;
+    text-align: center;
+    margin-bottom: 40px;
     padding: 40px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #007bff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    margin: 0 20px;
+}
+
+.plan:nth-child(2n) {
+    background-color: #ffc107;
 }
 
 .plan:hover {
     transform: translateY(-10px);
 }
 
-.plan:nth-child(2) {
-    background-color: #f9a825;
-}
-
-.plan:nth-child(3) {
-    background-color: #283593;
-}
-
 .plan h3 {
     font-size: 24px;
-    margin-bottom: 20px;
-    color: #283593;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .plan p {
     font-size: 18px;
     line-height: 1.6;
-    color: #333;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .plan .btn {
-    display: block;
-    width: 100%;
-    background-color: #283593;
-    color: #fff;
-    padding: 15px 0;
+    display: inline-block;
+    background-color: #fff;
+    color: #283593;
+    padding: 10px 20px;
     text-decoration: none;
-    border: none;
     border-radius: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
+    font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .plan .btn:hover {
-    background-color: #1a237e;
+    background-color: #f8f9fa;
+    color: #283593;
 }
-
-
-
-
-
-
 
 
 
