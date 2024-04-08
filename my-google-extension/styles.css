@@ -21,7 +21,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #283593;
+    background-color: #030511;
     color: #fff;
     padding: 20px 0;
     position: fixed;
@@ -54,7 +54,7 @@ header {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #007bff;
+    background-color: #183b61;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -120,37 +120,63 @@ header {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
-    color: #283593;
+    color: #0a0e2d;
 }
 
 .feature {
     display: inline-block;
-    width: calc(33.33% - 40px);
+    width: calc(33.33% - 60px);
     margin: 0 20px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
     vertical-align: top;
-    background-color: #fff;
+    background-color: #e5f1fd;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
     transform: translateY(-10px);
+    background-color: #b0c3d9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .feature h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #283593;
+    color: #0c1342;
 }
 
 .feature p {
     font-size: 16px;
     line-height: 1.6;
+    color: #555;
 }
+
+/* Additional styles for more interactivity */
+.feature:hover h3 {
+    color: #325b82; /* Change color on hover */
+}
+
+.feature:hover p {
+    color: #333; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Pricing Section Styles */
 .pricing {
@@ -163,63 +189,70 @@ header {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
-    color: #283593;
+    color: #070a27;
 }
 
 .plans {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .plan {
-    width: calc(50% - 40px);
+    width: calc(50% - 140px);
+    height: 500px;
     margin: 0 20px;
     text-align: center;
     margin-bottom: 40px;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #007bff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    border-radius: 20px;
+    background-size: 200% auto;
+    background: linear-gradient(45deg, #89b0c8 50%, #51a4b3 50%);
     transition: transform 0.3s ease;
-}
-
-.plan:nth-child(2n) {
-    background-color: #ffc107;
 }
 
 .plan:hover {
     transform: translateY(-10px);
 }
 
+.plan:nth-child(2) {
+    background: linear-gradient(45deg, #FFC107 30%, #e9941e 80%);
+}
+
 .plan h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-bottom: 25px;
     color: #fff;
 }
 
 .plan p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #fff;
 }
 
 .plan .btn {
     display: inline-block;
-    background-color: #fff;
-    color: #283593;
-    padding: 10px 20px;
+    align-items: end;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 30px;
     text-decoration: none;
+    border: 2px solid #fff;
     border-radius: 30px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .plan .btn:hover {
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.3);
     color: #283593;
 }
+
+
+
 
 
 
@@ -243,7 +276,7 @@ header {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
-    color: #283593;
+    color: #0b0e2c;
 }
 
 .contact form {
@@ -263,7 +296,7 @@ header {
 
 .contact button {
     display: block;
-    background-color: #283593;
+    background-color: #11184d;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -276,12 +309,12 @@ header {
 }
 
 .contact button:hover {
-    background-color: #1a237e;
+    background-color: #090b24;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #283593;
+    background-color: #06081c;
     color: #fff;
     padding: 20px 0;
     text-align: center;
