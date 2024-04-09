@@ -54,7 +54,7 @@ header {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #183b61;
+    background-color: #0a1c2f;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -73,7 +73,7 @@ header {
 .hero .btn {
     display: inline-block;
     background-color: #ffc107;
-    color: #283593;
+    color: #161e59;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 30px;
@@ -83,18 +83,44 @@ header {
 
 .hero .btn:hover {
     background-color: #ffca28;
-    color: #283593;
+    color: #0a0e2b;
 }
 
 
 
 
+/*how to use css*/
 
+/* How to Use Section Styles */
+.how-to-use {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
 
+.how-to-use h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0a0e2d;
+}
 
+.instruction {
+    margin-bottom: 40px;
+    text-align: left;
+}
 
+.instruction h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0c1342;
+}
 
-
+.instruction p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
 
 
 

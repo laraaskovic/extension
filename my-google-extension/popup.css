@@ -4,11 +4,14 @@ body, html {
     width: 300px; /* Increased width */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #000000;
+
 }
 
 .container {
     padding: 20px;
+    border-radius: 10px;
+
 }
 
 h1 {
@@ -24,7 +27,7 @@ p {
 }
 
 button {
-    background-color: #d08f15;
+    background-color: #3b2a99;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -34,12 +37,12 @@ button {
 }
 
 button:hover {
-    background-color: #ebb344;
+    background-color: #4f44eb;
 }
 
 .footer {
     margin-top: 20px;
     font-size: 12px;
     text-align: center;
-    color: #666;
+    color: #3c3c3c;
 }
