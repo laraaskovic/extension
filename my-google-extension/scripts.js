@@ -1,4 +1,4 @@
-// scripts.js
+/*NOT IN USE
 
 document.getElementById('paymentForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -35,3 +35,4 @@ function simulatePayment(paymentDetails) {
         }, 2000); // Simulate 2 seconds delay
     });
 }
+*/

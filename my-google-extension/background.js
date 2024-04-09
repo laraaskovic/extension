@@ -1,3 +1,5 @@
+
+
 chrome.commands.onCommand.addListener(function(command) {
     console.log(`Command received: ${command}`); // This helps in debugging
 
