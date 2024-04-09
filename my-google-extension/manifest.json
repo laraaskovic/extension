@@ -21,19 +21,12 @@
         "description": "Open the first search result"
       }
     },
-    "content_scripts": [
-        {
-          "matches": ["*://*.google.com/*"],
-          "js": ["content.js"]
-        }
-      ],
-      
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
         "16": "images/icon16.jpg",
         "48": "images/icon48.webp",
-        "128": "images/icon128.webp"
+        "128":"images/icon128.webp"
       }
     }
   }
