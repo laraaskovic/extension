@@ -5,7 +5,7 @@
     "description": "Automatically opens the first Google search result with a shortcut.",
     "permissions": [
         "activeTab",
-        "scripting",
+        "scripting"
       ],
       
     "background": {
