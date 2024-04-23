@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector("goPremium")
+        button.addEventListener("click", () => {
+        fetch("http://localhost:3040/create-checkout-session", {
+            method: "POST"
+        })
+            .then(res => res.json())
+            .then(({ url }) => {
+            window.location = url
+            })
+            .catch(e => {
+            console.error(e.error)
+            })
+        })
+    
+    /*
     const goPremiumButton = document.getElementById("goPremium");
   
     goPremiumButton.addEventListener("click", function() {
@@ -21,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             chrome.runtime.sendMessage({ action: "upgradeToPremium" });
         }
     }
-    
+    */
   });
   
