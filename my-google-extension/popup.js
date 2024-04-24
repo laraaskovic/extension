@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector("goPremium")
         button.addEventListener("click", () => {
-        fetch("http://localhost:3040/create-checkout-session", {
+        fetch("http://localhost:3000/create-checkout-session", {
             method: "POST"
         })
             .then(res => res.json())
