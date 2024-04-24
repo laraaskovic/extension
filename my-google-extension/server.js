@@ -1,8 +1,8 @@
 require("dotenv").config()
 const { SERVER_PORT, CLIENT_URL } = process.env;
 
-const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO;
-const STRIPE_PRICE_ID = price_1P96iZCdmqwVXXEuhHH9cM38;
+const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO
+const STRIPE_PRICE_ID = price_1P96iZCdmqwVXXEuhHH9cM38
 
 
 const express = require("express")
@@ -15,7 +15,7 @@ app.use(express.static("client"));
 
 const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
-const quantity = 25
+const quantity = 1
 
 app.post("/create-checkout-session", async (req, res) => {
   try {
@@ -65,16 +65,13 @@ app.get("/stripe-session", async (req, res) => {
       const session = await stripe.checkout.sessions.retrieve(user.stripe_session_id);
       console.log("session: ", session);
 
-      // const sessionResult = {
-      //   id: 'cs_test_a1lpAti8opdtSIDZQIh9NZ6YhqMMwC0H5wrlwkUEYJc6GXokj2g5WyHkv4',
-      //   …
-      //   customer: 'cus_PD6t4AmeZrJ8zq',
-      //   …
-      //   status: 'complete',
-      //   …
-      //   subscription: 'sub_1OOgfhAikiJrlpwD7EQ5TLea',
-      //  …
-      // }
+       const sessionResult = {
+        id: 'cs_test_a1lpAti8opdtSIDZQIh9NZ6YhqMMwC0H5wrlwkUEYJc6GXokj2g5WyHkv4',
+         
+         customer: 'cus_PD6t4AmeZrJ8zq',
+         status: 'complete',
+         subscription: 'sub_1OOgfhAikiJrlpwD7EQ5TLea',
+       }
       
     
       // update the user
