@@ -1,5 +1,8 @@
-const { SERVER_PORT, CLIENT_URL } = process.env;
+require("dotenv").config()
+const { SERVER_PORT } = process.env;
 
+
+const CLIENT_URL = 'http://localhost:3040'
 const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO
 const STRIPE_PRICE_ID = price_1P96iZCdmqwVXXEuhHH9cM38
 
