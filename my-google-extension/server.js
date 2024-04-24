@@ -1,4 +1,3 @@
-require("dotenv").config()
 const { SERVER_PORT, CLIENT_URL } = process.env;
 
 const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO
