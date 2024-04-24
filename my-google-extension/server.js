@@ -1,5 +1,10 @@
 require("dotenv").config()
-const { SERVER_PORT, STRIPE_PRIVATE_KEY, STRIPE_PRICE_ID, CLIENT_URL } = process.env;
+const { SERVER_PORT, CLIENT_URL } = process.env;
+
+const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO;
+const STRIPE_PRICE_ID = price_1P96iZCdmqwVXXEuhHH9cM38;
+
+
 const express = require("express")
 const app = express()
 const cors = require("cors")
