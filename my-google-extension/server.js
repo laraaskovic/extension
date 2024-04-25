@@ -1,4 +1,36 @@
-require("dotenv").config()
+const stripe = require("stripe")("sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO");
+
+const STRIPE_PRICE_ID = "price_1P96iZCdmqwVXXEuhHH9cM38";
+const CLIENT_URL = "http://localhost:3010"; // Update with your client URL
+
+const quantity = 1;
+
+// Endpoint for creating a checkout session
+app.post("/create-checkout-session", async (req, res) => {
+    try {
+        const session = await stripe.checkout.sessions.create({
+            success_url: CLIENT_URL,
+            cancel_url: CLIENT_URL,
+            line_items: [
+                {
+                    price: STRIPE_PRICE_ID,
+                    quantity: quantity,
+                },
+            ],
+            mode: 'subscription',
+        });
+
+        res.json({ url: session.url });
+    } catch (e) {
+        res.status(500).json({ error: e.message });
+    }
+});
+
+// Start server
+const port = 3010; // Port number for your server
+app.listen(port, () => console.log(`Server running on port ${port}`));
+
+/*require("dotenv").config()
 const SERVER_PORT = 3010; 
 
 
@@ -98,3 +130,4 @@ app.get("/stripe-session", async (req, res) => {
 
 const port = SERVER_PORT;
 app.listen(port, () => console.log(`Port running on port ${port}`));
+*/
