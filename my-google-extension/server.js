@@ -19,7 +19,7 @@ const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
 const quantity = 1
 
-app.post("/create-checkout-session", async (res) => {
+app.post("/create-checkout-session", async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
       success_url: `${CLIENT_URL}`,
