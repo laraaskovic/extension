@@ -1,8 +1,8 @@
 require("dotenv").config()
-const SERVER_PORT = 3000; 
+const SERVER_PORT = 3010; 
 
 
-const CLIENT_URL = 'http://localhost:3000'
+const CLIENT_URL = 'http://localhost:3010'
 const STRIPE_PRIVATE_KEY = sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO
 const STRIPE_PRICE_ID = price_1P96iZCdmqwVXXEuhHH9cM38
 
