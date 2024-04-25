@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector("#goPremium");
+    button.addEventListener("click", function() {
+        // Open a new tab with the checkout session URL
+        chrome.tabs.create({ url: "about:blank" }, function(tab) {
+            // Callback function after the tab is created
+            // Inject a content script into the new tab to navigate to the checkout session URL
+            chrome.tabs.executeScript(tab.id, {
+                code: `window.location.href = "${CLIENT_URL}/create-checkout-session";`
+            });
+        });
+    });
+});
+
+
+/*document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector("#goPremium")
         button.addEventListener("click", function() {
 
@@ -14,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         })
     
-    /*
+    
     const goPremiumButton = document.getElementById("goPremium");
   
     goPremiumButton.addEventListener("click", function() {
-        chrome.tabs.create({ url: "server.js" }, function(tab) {
+        chrome.tabs.create({ url: "landing.html" }, function(tab) {
             chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, updatedTab) {
                 if (tabId === tab.id && changeInfo.status === "complete") {
                     chrome.scripting.executeScript({
@@ -29,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
-*/
+
     
   });
+*/
