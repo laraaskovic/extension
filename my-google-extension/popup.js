@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    /*const button = document.querySelector("goPremium")
+    const button = document.querySelector("#goPremium")
         button.addEventListener("click", function() {
 
-        fetch("http://localhost:3004/create-checkout-session", {
+        fetch("http://localhost:3010/create-checkout-session", {
             method: "POST"
         })
             .then(res => res.json())
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             })
         })
     
-    */
+    /*
     const goPremiumButton = document.getElementById("goPremium");
   
     goPremiumButton.addEventListener("click", function() {
@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
-
+*/
     
   });
