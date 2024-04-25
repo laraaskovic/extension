@@ -1,4 +1,35 @@
+const express = require("express");
+const app = express();
 const stripe = require("stripe")("sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO");
+
+const STRIPE_PRICE_ID = "price_1P96iZCdmqwVXXEuhHH9cM38";
+const CLIENT_URL = "http://localhost:3010";
+const quantity = 1;
+
+app.use(express.json());
+
+app.post("/create-checkout-session", async (req, res) => {
+    try {
+        const session = await stripe.checkout.sessions.create({
+            success_url: CLIENT_URL,
+            cancel_url: CLIENT_URL,
+            line_items: [{ price: STRIPE_PRICE_ID, quantity: quantity }],
+            mode: 'subscription',
+        });
+
+        res.json({ url: session.url });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+const PORT = 3010;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
+
+/*const stripe = require("stripe")("sk_test_51P3mkrCdmqwVXXEuEUpkSmoPFdeWQsZQS0fEONJD3AxrD5xViTlS46KQqFbGbl08zqmBj5fJUcTiPvEXdtnKp4L3000tHFhPSO");
 
 const STRIPE_PRICE_ID = "price_1P96iZCdmqwVXXEuhHH9cM38";
 const CLIENT_URL = "http://localhost:3010"; // Update with your client URL
@@ -29,6 +60,37 @@ app.post("/create-checkout-session", async (req, res) => {
 // Start server
 const port = 3010; // Port number for your server
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*require("dotenv").config()
 const SERVER_PORT = 3010; 
