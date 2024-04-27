@@ -1,4 +1,18 @@
-const CLIENT_URL = "http://localhost:3010";
+const button = document.querySelector("button")
+button.addEventListener("click", () => {
+  fetch("http://localhost:3010/create-checkout-session", {
+    method: "POST"
+  })
+    .then(res => res.json())
+    .then(({ url }) => {
+      window.location = url
+    })
+    .catch(e => {
+      console.error(e.error)
+    })
+})
+
+/*const CLIENT_URL = "http://localhost:3010";
 
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector("#goPremium");
@@ -7,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         chrome.tabs.create({ url: "http://localhost:3010" });
     });
 });
-
+*/
 
 /*const CLIENT_URL = "http://localhost:3010"; // Update with your client URL
 
