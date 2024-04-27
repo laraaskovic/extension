@@ -11,8 +11,8 @@ app.use(express.json());
 app.post("/create-checkout-session", async (req, res) => {
     try {
         const session = await stripe.checkout.sessions.create({
-            success_url: CLIENT_URL,
-            cancel_url: CLIENT_URL,
+            success_url: "landing.html",
+            cancel_url: "landing.html",
             line_items: [{ price: STRIPE_PRICE_ID, quantity: quantity }],
             mode: 'subscription',
         });
