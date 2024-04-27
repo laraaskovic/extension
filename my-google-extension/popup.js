@@ -1,13 +1,12 @@
-const GOOGLE_URL = "https://www.google.com";
+const CLIENT_URL = "http://localhost:3010";
 
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector("#goPremium");
     button.addEventListener("click", function() {
-        // Open a new tab with the Google URL
-        chrome.tabs.create({ url: GOOGLE_URL });
+        // Open a new tab with the checkout session URL
+        chrome.tabs.create({ url: "http://localhost:3010" });
     });
 });
-
 
 
 /*const CLIENT_URL = "http://localhost:3010"; // Update with your client URL
