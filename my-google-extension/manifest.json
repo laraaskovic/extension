@@ -15,7 +15,7 @@
       "open-first-link": {
         "suggested_key": {
             "default": "Alt+O",
-            "mac": "Command+O"
+            "mac": "Command+V"
           },
         "description": "Open the first search result"
       }
