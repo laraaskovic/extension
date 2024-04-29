@@ -1,5 +1,3 @@
-
-
 chrome.commands.onCommand.addListener(function(command) {
     console.log(`Command received: ${command}`); // This helps in debugging
 
@@ -15,8 +13,8 @@ chrome.commands.onCommand.addListener(function(command) {
   
   function openFirstLink() {
     setTimeout(() => {
-      const resultsSelector = '#search .g'; // This is an example; adjust based on actual structure
-      const linkSelector = 'a'; // Likely needs adjustment to be more specific
+      const resultsSelector = '#search .g'; 
+      const linkSelector = 'a'; 
   
       const resultsContainer = document.querySelector(resultsSelector);
       if (!resultsContainer) {
