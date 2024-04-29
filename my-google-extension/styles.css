@@ -120,19 +120,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Features Section Styles */
 .features {
     padding: 80px 0;
@@ -186,107 +173,6 @@ header {
 .feature:hover p {
     color: #333; /* Change color on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Pricing Section Styles */
-.pricing {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.pricing h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #070a27;
-}
-
-.plans {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.plan {
-    width: calc(50% - 140px);
-    height: 500px;
-    margin: 0 20px;
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 60px;
-    border-radius: 20px;
-    background-size: 200% auto;
-    background: linear-gradient(45deg, #89b0c8 50%, #51a4b3 50%);
-    transition: transform 0.3s ease;
-}
-
-.plan:hover {
-    transform: translateY(-10px);
-}
-
-.plan:nth-child(2) {
-    background: linear-gradient(45deg, #FFC107 30%, #e9941e 80%);
-}
-
-.plan h3 {
-    font-size: 34px;
-    margin-bottom: 25px;
-    color: #fff;
-}
-
-.plan p {
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.plan .btn {
-    display: inline-block;
-    align-items: end;
-    background-color: transparent;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.plan .btn:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #283593;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
