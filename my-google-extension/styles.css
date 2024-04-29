@@ -82,8 +82,10 @@ header {
 }
 
 .hero .btn:hover {
-    background-color: #ffca28;
+    background-color: #770b43;
     color: #0a0e2b;
+    transform: translateY(-10px);
+
 }
 
 
