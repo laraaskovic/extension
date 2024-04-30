@@ -73,7 +73,7 @@ header {
 .hero .btn {
     display: inline-block;
     background-color: #ffc107;
-    color: #161e59;
+    color: #0a0f35;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 30px;
@@ -82,9 +82,9 @@ header {
 }
 
 .hero .btn:hover {
-    background-color: #e7a41e;
+    background-color: #f3c362;
     color: #0a0e2b;
-    transform: translateY(-10px);
+    transform: translateY(-7px);
 
 }
 
