@@ -1,9 +1,6 @@
 require("dotenv").config()
 
-
-
 const { SERVER_PORT, STRIPE_PRIVATE_KEY, STRIPE_PRICE_ID, CLIENT_URL } = process.env;
-
 
 
 const express = require("express")
@@ -16,7 +13,7 @@ app.use(express.static("client"));
 
 const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
-const quantity = 25
+const quantity = 1
 
 app.post("/create-checkout-session", async (req, res) => {
   try {
