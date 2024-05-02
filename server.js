@@ -12,9 +12,6 @@ const cors = require("cors")
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/landing.html');
-});
 
 app.use(express.static("client"));
 
