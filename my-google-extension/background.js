@@ -8,9 +8,20 @@ chrome.commands.onCommand.addListener(function(command) {
 });
 
 function checkSubscriptionStatus() {
-  // Perform a simple check, for example, using localStorage or Chrome Storage API
-  chrome.storage.sync.get(['subscriptionStatus'], function(result) {
-      if (result.subscriptionStatus === 'active') {
+  // Send a request to your server to check the subscription status
+  fetch('http://localhost:3000/check-subscription', {
+    method: 'GET',
+      credentials: 'include' // include cookies in the request
+  })
+  .then(response => {
+      if (response.ok) {
+          return response.text();
+      } else {
+          throw new Error('Network response was not ok.');
+      }
+  })
+  .then(data => {
+      if (data === 'success') {
           // User has an active subscription, execute the command
           executeCommand();
       } else {
@@ -18,6 +29,9 @@ function checkSubscriptionStatus() {
           console.log('User does not have an active subscription.');
           // Optionally, you can display a notification to the user or redirect them to a purchase page.
       }
+  })
+  .catch(error => {
+      console.error('Error checking subscription status:', error);
   });
 }
 
