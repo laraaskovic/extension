@@ -46,7 +46,7 @@ function executeCommand() {
 
 function openFirstLink() {
   setTimeout(() => {
-      const resultsSelector = '#search .g'; 
+      /*const resultsSelector = '#search .g'; 
       const linkSelector = 'a'; 
 
       const resultsContainer = document.querySelector(resultsSelector);
@@ -61,7 +61,7 @@ function openFirstLink() {
           window.location.href = firstResultLink.href; // Navigate to the first result
       } else {
           console.log("First result link not found. Check if the selector is correct.");
-      }
+      }*/
   }, 100); // Delay of 1000 milliseconds (1 second)
 }
 
