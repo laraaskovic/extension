@@ -19,7 +19,7 @@ const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
 const PORT = process.env.SERVER_PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
 
 const quantity = 1
