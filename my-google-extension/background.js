@@ -9,7 +9,7 @@ chrome.commands.onCommand.addListener(function(command) {
 
 function checkSubscriptionStatus() {
   // Send a request to your server to check the subscription status
-  fetch('http://localhost:3000/check-subscription', {
+  fetch('http://localhost:3011/check-subscription', {
     method: 'GET',
       credentials: 'include' // include cookies in the request
   })
