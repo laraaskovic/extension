@@ -12,15 +12,13 @@ const cors = require("cors")
 app.use(express.json())
 app.use(cors())
 
-
 app.use(express.static("client"));
 
 const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
-
 const quantity = 1
 
-app.post("/localhost:3011/create-checkout-session", async (req, res) => {
+app.post("/create-checkout-session", async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
       success_url: `${CLIENT_URL}`,
@@ -35,7 +33,7 @@ app.post("/localhost:3011/create-checkout-session", async (req, res) => {
       subscription_data: {
         trial_period_days: 7, // Adjust the trial period as needed
       },
-
+    
     });
     console.log("session: ", session.id, session.url, session)
 
