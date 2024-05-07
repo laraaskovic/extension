@@ -17,14 +17,10 @@ app.use(express.static("client"));
 
 const stripe = require("stripe")(STRIPE_PRIVATE_KEY)
 
-const PORT = process.env.SERVER_PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
 
 const quantity = 1
 
-app.post("/create-checkout-session", async (req, res) => {
+app.post("/localhost:3011/create-checkout-session", async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
       success_url: `${CLIENT_URL}`,
