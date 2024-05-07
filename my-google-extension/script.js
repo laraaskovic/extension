@@ -1,7 +1,7 @@
 const goPremiumButton = document.getElementById("goPremium");
 
 goPremiumButton.addEventListener("click", function() {
-    fetch("http://localhost:3000", {
+    fetch("http://localhost:3000/create-checkout-session", {
         method: "POST"
     })
     .then(res => res.json())

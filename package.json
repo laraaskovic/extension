@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npm start"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
